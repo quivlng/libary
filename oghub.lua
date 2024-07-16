@@ -137,7 +137,7 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/CorruptOblivion/Obliv
 
 	for _0x4, _0x5 in pairs(_0xA) do
 		if _0x4 == _0xB.LocalPlayer.UserId then
-			_0xB.LocalPlayer:Kick('[OBLIVION]: You are a nigger. Reason: ' .. _0x5)
+			_0xB.LocalPlayer:Kick('[OBLIVION]: You are blacklisted. Reason: ' .. _0x5)
 			return
 		end
 	end
@@ -215,10 +215,10 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/CorruptOblivion/Obliv
 	local _0x1D = os.date
 	local _0x1E, _0x1F, _0x20 = _0x1D("%d", os.time()),  _0x1D("%m", os.time()), _0x1D("%y", os.time())
 	if _0x1F == '04' and _0x1E == '01' then
-		_0x14('Oblivion', 'Happy April fools from the OG!', 10)
+		_0x14('Oblivion', 'Happy April fools from the Oblivion team!', 10)
 		_0x7.Image = 'rbxassetid://10019867144'
 	elseif _0x1F == '12' and _0x1E == '25' then
-		_0x14('Oblivion', 'Merry Christmas from the OG!', 10)
+		_0x14('Oblivion', 'Merry Christmas from the Oblivion team!', 10)
 	end
 
 	_0xF(_0x7, 0.5, { ImageTransparency = 0, BackgroundTransparency = 0 })
@@ -257,7 +257,7 @@ elseif _0x3 and not _0x2 then
 end
 
 game.StarterGui:SetCore("SendNotification", {
-	Title = "thanks for using my script"; 
+	Title = "dm me if theres bugs"; 
       Text = "discord logmade";
 	Icon = "rbxassetid://16005965106";
 	Duration = 15;
@@ -923,8 +923,8 @@ Section:NewButton("Speed tool", "Speed", function()
 local AkaliNotif = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/Dynissimo/main/Scripts/AkaliNotif.lua"))();
 local Notify = AkaliNotif.Notify;
 Notify({
-Description = "lorb speed";
-Title = "lorb6543 On Discord";
+Description = "og speed";
+Title = "logmade On Discord";
 Duration = 15;
 });
 getgenv().Speed = true
@@ -1055,8 +1055,8 @@ local Sound = Instance.new("Sound",game:GetService("SoundService"))
 Sound.SoundId = "rbxassetid://1523818134"
 Sound:Play()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = ("UH lorb Gui");
-	Text = "lorb Fly Tool Loaded!";
+	Title = ("UH OG Gui");
+	Text = "OG Fly Tool Loaded!";
 	Icon = "rbxthumb://type=Asset&id=9915433572&w=150&h=150"})
 Duration = 16;
 
@@ -1066,7 +1066,7 @@ Duration = 16;
 mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
-tool.Name = "lorb Fly Tool"
+tool.Name = "OG Fly Tool"
 tool.Activated:connect(function()
 local pos = mouse.Hit+Vector3.new(0,2.5,0)
 pos = CFrame.new(pos.X,pos.Y,pos.Z)
@@ -1883,11 +1883,11 @@ if getgenv().Resolver then
 end
 end)
 
-Section:NewButton("lorb Aimlock Tool", "ButtonInfo", function()
+Section:NewButton("OG Aimlock Tool", "ButtonInfo", function()
 mouse = game.Players.LocalPlayer:GetMouse()
 tool = Instance.new("Tool")
 tool.RequiresHandle = false
-tool.Name = "lorb Aimlock Tool 1"
+tool.Name = "OG Aimlock Tool 1"
 tool.Activated:connect(function()
 local pos = mouse.Hit+Vector3.new(0,2.5,0)
 pos = CFrame.new(pos.X,pos.Y,pos.Z)
@@ -1919,7 +1919,7 @@ getgenv().Circle = true
     
     --variables                 
     	local Tracer = Instance.new("Part", game.Workspace)
-    Tracer.Name = "lorbtool"	
+    Tracer.Name = "ogtool"	
     Tracer.Anchored = true		
     Tracer.CanCollide = false
     Tracer.Transparency = 0.7
@@ -1970,7 +1970,7 @@ end)
     --
     if getgenv().valiansh == true then
                         game.StarterGui:SetCore("SendNotification", {
-                   Title = "lorb lock",
+                   Title = "og lock",
                    Text = "Aimlock Tool Loaded!.",
                    Duration = 5
         
@@ -2006,7 +2006,7 @@ end)
         	end	
         if getgenv().NotifMode then
                         game.StarterGui:SetCore("SendNotification", {
-                   Title = "lorb Gui",
+                   Title = "OG Gui",
                    Text = "Player Unlocked!",
                    Duration = 5
                })
@@ -2098,11 +2098,11 @@ end
     end
 end)
 
-Section:NewButton("lorb target Aimlock Tool", "ButtonInfo", function()
+Section:NewButton("OG target Aimlock Tool", "ButtonInfo", function()
 loadstring(game:HttpGet("https://pastebin.com/raw/3ViK4zBC"))();
 end)
 
-Section:NewButton("lorb Silent aim", "op", function()
+Section:NewButton("OG Silent aim", "op", function()
 -- Settings
 getgenv().HitPart = "HumanoidRootPart"
 getgenv().Prediction = 0.1485436
@@ -6760,7 +6760,7 @@ game.Players[MainAccount].Chatted:Connect(function(msg)
             game.Players.LocalPlayer.HumanoidRootPart.cframe = cframe.new(game.Players[MainAccount].character.HumanoidRootPart.Position)*cframe.new(0,2,0)
             Event:FireServer(A_1, A_2)
         elseif msg:lower() == "/e test" then
-            chat("i LOVE og")
+            chat("work real")
         elseif msg:lower() == "/e test2" then
             chat("work real")
         elseif msg:lower() == ".bring" then
@@ -6856,12 +6856,12 @@ game.Players.LocalPlayer.Character.UppperTorso.Anchored = false
 
 game:GetService("RunService").RenderStepped:Connect(function()
         wait()
-        game.Players.ihys0ul.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. game.Players.ihys0ul.DisplayName)
+        game.Players.AhpMCBqXaqCJ.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. game.Players.AhpMCBqXaqCJ.DisplayName)
         wait()
     end)
     game:GetService("RunService").RenderStepped:Connect(function()
         wait()
-        game.Players.24ktreezz.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. game.Players.24ktreezz.DisplayName)
+        game.Players.OodDExUIk.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. game.Players.OodDExUIk.DisplayName)
         wait()
     end)
 
